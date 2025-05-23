@@ -1,46 +1,46 @@
-# HomographyNet
+# 🖼️ HomographyNet
 
-Deep Homography Estimation for Pattern Recognition
-
----
-
-## Overview
-
-HomographyNet is a deep learning model designed to estimate planar homographies between image patches. It predicts the 4-point homography parameters directly from pairs of grayscale image patches, enabling tasks such as perspective correction, image alignment, and geometric transformations useful in computer vision and pattern recognition applications.
-
-This implementation is based on a convolutional neural network architecture that regresses the eight parameters representing corner displacements of a warped patch.
+## Deep Learning for Planar Homography Estimation 🎯
 
 ---
 
-## Author
+### 🚀 Overview
+
+**HomographyNet** is a deep convolutional neural network that estimates planar homographies directly from pairs of grayscale image patches. It predicts the 8 parameters representing the corner shifts of a warped image patch, enabling applications like image alignment, perspective correction, and geometric transformations — essential tools in computer vision and pattern recognition.
+
+This model learns end-to-end from data, making it robust to noise and variations in images.
+
+---
+
+### 👤 Author
 
 **Ahmad El Jouma**  
-January 2021
+📅 January 2021
 
 ---
 
-## Features
+### ⚙️ Features
 
-- Deep homography regression network using Keras and TensorFlow backend.
-- End-to-end learning of 4-point homography parameters.
-- Custom Euclidean distance loss for precise homography estimation.
-- Data loader and generator for training on COCO dataset image patches.
-- Visualization of original and warped images for evaluation.
-- Save and load model weights for training continuation or inference.
-- Supports batch training with data augmentation via random perturbations.
+- 🎛️ **Convolutional Neural Network** tailored for homography regression
+- 📊 **Predicts 4-point corner displacements** (8 parameters total)
+- 🔄 **Data augmentation** with random perturbations for robust training
+- 📚 **Training data generation** from standard image datasets (e.g., COCO)
+- 🖥️ **Visualization tools** for evaluating predictions and transformations
+- 💾 Save and load model weights for flexible training and inference
+- 🔧 Custom **Euclidean distance loss** for accurate parameter regression
 
 ---
 
-## Requirements
+### 📦 Requirements
 
 - Python 3.6+
-- Keras
-- TensorFlow (backend for Keras)
-- OpenCV (`opencv-python`)
+- [Keras](https://keras.io) (TensorFlow backend)
+- [TensorFlow](https://www.tensorflow.org)
+- [OpenCV](https://opencv.org) (`opencv-python`)
 - NumPy
 - Matplotlib
 
-Install required packages using:
+Install dependencies via:
 
 ```bash
 pip install keras tensorflow opencv-python numpy matplotlib
